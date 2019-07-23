@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
 * {
   font-family: "Roboto", sans-serif;
@@ -84,6 +84,16 @@ h1 {
   width: 550px;
   height: 650px;
   z-index: -1;
+}
+
+.hire-me {
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  background: dodgerblue;
+  border-bottom: 2px solid rgb(24, 110, 196);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 @media (max-width: 520px) {

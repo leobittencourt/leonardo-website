@@ -7,16 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Leonardo Brito Bittencourt - Web Developer Ribeirão Preto SP</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css">
   <meta name="description"
-    content="Desenvolvedor web residente em Ribeirão Preto - SP com experiência nas tecnologias ReactJS, ReactNative e NodeJS">
+    content="Leonardo Brito Bittencourt, Ribeirão Preto - SP, Brasil, desenvolvedor web com experiência nas tecnologias ReactJS, ReactNative e NodeJS">
   <meta name="keywords" content="programação,desenvolvedor,web,Ribeirão Preto,ReactJS,ReactNative,NodeJS">
   <meta name="revisit-after" content="1 day">
   <meta name="language" content="Portuguese">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="robots" content="index">
   <meta name="author" content="Leonardo Brito Bittencourt - https://leonardobrito.com.br">
-  <link rel=”canonical” href=”https://leonardobrito.com.br” />
+  <link rel="canonical" href="https://leonardobrito.com.br" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
@@ -26,7 +27,11 @@
       <div class="me">
         <h1>Leonardo Brito Bittencourt, <span id="age"></span></h1>
         <p id="bio"></p>
+
       </div>
+      <a href="mailto:leonardobritobittencourt@gmail.com?Subject=Leonardo's WebSite Contact - Hire Me"
+        class="hire-me animated infinite pulse">Hire
+        Me</a>
 
       <div class="skills">
         <h2>Skills</h2>
@@ -77,16 +82,20 @@
   <script src="./js/typed.min.js"></script>
   <script defer async>
     const age = document.getElementById('age');
+
     const year = new Date().getFullYear();
     const month = new Date().getMonth();
-    if (month >= 9) {
+    const day = new Date().getDay();
+
+    if (day >= 1 && month >= 9) {
       age.innerHTML = year - 1998;
     }
+
     age.innerHTML = year - 1 - 1998;
 
     new Typed("#bio", {
       strings: ["Hi! I'm a web developer from Ribeirão Preto - SP, Brazil."],
-      typeSpeed: 40
+      typeSpeed: 90
     });
   </script>
 </body>
