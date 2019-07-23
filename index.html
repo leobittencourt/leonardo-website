@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Leonardo Brito Bittencourt - Web Developer Ribeirão Preto SP</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="description"
+    content="Desenvolvedor web residente em Ribeirão Preto - SP com experiência nas tecnologias ReactJS, ReactNative e NodeJS">
+  <meta name="keywords" content="programação,desenvolvedor,web,Ribeirão Preto,ReactJS,ReactNative,NodeJS">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="Portuguese">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="robots" content="index">
+  <meta name="author" content="Leonardo Brito Bittencourt - https://leonardobrito.com.br">
+  <link rel=”canonical” href=”https://leonardobrito.com.br” />
+</head>
+
+<body>
+  <div class="leonardo"></div>
+  <section class="web">
+    <div class="container">
+      <div class="me">
+        <h1>Leonardo Brito Bittencourt, <span id="age"></span></h1>
+        <p id="bio"></p>
+      </div>
+
+      <div class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <ul>
+            <li>ReactJS</li>
+            <li>React Native</li>
+            <li>NodeJS</li>
+          </ul>
+          <ul>
+            <li>AWS</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+          </ul>
+          <ul>
+            <li>Flutter</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="formation">
+        <h2>Formation</h2>
+        <p>Bachelor's degree of Computer Science at Estácio University Center of Ribeirão Preto</p>
+      </div>
+
+      <div class="experiences">
+        <h2>Professional Experiences</h2>
+        <ul>
+          <li>May/2018 - Today</li>
+          <li>Front-end Developer in the Grupo SEB</li>
+          <li>ReactJS, React Native</li>
+        </ul>
+        <ul>
+          <li>March/2017 - 05/2018</li>
+          <li>Developer in the Faculdade Metropolitana</li>
+          <li>PHP, CakePHP, MySQL, AWS, Bootstrap, jQuery</li>
+        </ul>
+        <ul>
+          <li>March/2016 - March/2017</li>
+          <li>Trainee Developer in the Faculdade Metropolitana</li>
+          <li>PHP, CakePHP, MySQL, AWS, Bootstrap, jQuery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/typed.min.js"></script>
+  <script defer async>
+    const age = document.getElementById('age');
+    const year = new Date().getFullYear();
+    const month = new Date().getMonth();
+    if (month >= 9) {
+      age.innerHTML = year - 1998;
+    }
+    age.innerHTML = year - 1 - 1998;
+
+    new Typed("#bio", {
+      strings: ["Hi! I'm a web developer from Ribeirão Preto - SP, Brazil."],
+      typeSpeed: 40
+    });
+  </script>
+</body>
+
+</html>
